@@ -1,5 +1,56 @@
+:root {
+  /* PALETA DE COLORES */
+  --color-primary: #0a2f4a;
+  --color-secondary: #7c7c7c;
+  --color-background: #f0f0f3;
+  --color-text: #292929;
+  --color-light: #e3e3ff;
+  --color-light-hover: #dadaee;
+
+  /* TIPOGRAFÍAS */
+  --font-primary: 'Inter', sans-serif; /* Para parrafos */
+  --font-secondary: 'Montserrat', serif; /* Para encabezados */
+
+  /* TAMAÑOS FUENTE BASE */
+  --font-size-base: 1.125rem; /* 18px - un buen tamaño para legibilidad */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6; /* Mejora la legibilidad */
+  text-rendering: optimizeLegibility; /* Mejora la calidad del texto */
+}
+
+/* ENCABEZADOS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary); /* Usa el color principal para dar énfasis */
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* CLASES DE CONTENEDOR */
+/* Es crucial para centrar el contenido y limitar su ancho */
+.container {
+  max-width: 1200px; /* Ancho máximo común */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }

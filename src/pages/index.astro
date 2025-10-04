@@ -1,16 +1,10 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro"
 
+const pageTitle = "Impulsur desarrollos"
+const pageDescription = "Impulsa tu negocio online con sitios web a medida y presencia online de calidad.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/impulsur-logo.webp" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} /> 
-		<title>Impulsur</title>
-	</head>
-	<body>
-		<h1>Impulsur devs</h1>
-	</body>
-</html>
+<BaseLayout title={pageTitle} description={pageDescription}>
+ 
+</BaseLayout>
