@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@config {
+  content: [ './src/**/*.{astro,html,js,jsx,ts,tsx}', ];
+}
+
 :root {
   /* PALETA DE COLORES */
   --color-primary: #0a2f4a;
