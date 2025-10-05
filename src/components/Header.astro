@@ -1,4 +1,7 @@
 ---
+
+const currentPath = Astro.url.pathname
+
 const navLinks = [
   {title:'Inicio', href:'/'},
   {title:'Servicios', href: '/servicios'},
@@ -19,15 +22,12 @@ const navLinks = [
         <ul class="flex items-center gap-8 text-lg font-light ">
           {navLinks.map(link => (
             <li class="">
-            <a class="border-b-2 block px-3 py-2 transition duration-100 hover:border-blue-500" 
+            <a class={
+        `block px-3 py-2 border-b-2 transition duration-100
+         ${currentPath === link.href ? 'border-blue-500' : 'border-transparent hover:border-blue-500'}`
+      } 
    href={link.href} 
-   class:list={{
-       // ESTADO ACTIVO: Aplica el color del borde si las rutas coinciden
-       'border-blue-500': Astro.url.pathname === link.href, 
-       
-       // ESTADO INACTIVO: Si NO es la sección actual, el borde es transparente
-       'border-transparent': Astro.url.pathname !== link.href 
-    }}>
+   >
   {link.title}
 </a></li>
           ))}
