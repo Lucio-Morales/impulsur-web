@@ -23,7 +23,7 @@ const navLinks = [
    href={link.href} 
    class:list={{
        // ESTADO ACTIVO: Aplica el color del borde si las rutas coinciden
-       'border-blue-700': Astro.url.pathname === link.href, 
+       'border-blue-500': Astro.url.pathname === link.href, 
        
        // ESTADO INACTIVO: Si NO es la sección actual, el borde es transparente
        'border-transparent': Astro.url.pathname !== link.href 
