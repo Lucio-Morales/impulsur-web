@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   /* PALETA DE COLORES */
   --color-primary: #0a2f4a;
@@ -17,19 +19,18 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: var(--font-primary);
   color: var(--color-text);
   background-color: var(--color-background);
-  line-height: 1.6; /* Mejora la legibilidad */
   text-rendering: optimizeLegibility; /* Mejora la calidad del texto */
 }
 
@@ -48,9 +49,9 @@ h6 {
 
 /* CLASES DE CONTENEDOR */
 /* Es crucial para centrar el contenido y limitar su ancho */
-.container {
-  max-width: 1200px; /* Ancho máximo común */
+/* .container {
+  max-width: 1200px; 
   width: 90%;
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
-}
+} */
