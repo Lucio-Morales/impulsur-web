@@ -22,8 +22,9 @@ const navLinks = [
         <ul class="flex items-center gap-8 text-lg font-light ">
           {navLinks.map(link => (
             <li class="">
-            <a
+            <a 
               href={link.href}
+              data-astro-prefetch="tap"
               class={`px-3 py-2 border-b-2 transition duration-100 ${
                 currentPath.replace(/\/$/, '') === link.href.replace(/\/$/, '')
                   ? 'border-blue-500'
